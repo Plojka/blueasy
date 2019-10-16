@@ -24,7 +24,7 @@ html, body {
 
 //header
 .header {
-    height: 50rem;
+    height: 35rem;//50rem
 
     .header-img {
         height: 100%;
@@ -153,5 +153,77 @@ html, body {
             width: fit-content;
             justify-self: center;
         }
+    }
+}
+
+//services
+.services {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-auto-rows: minmax(6rem, auto);
+    background-color: #4bcaff;
+
+    .service-text-h1 {
+        @include font-link;
+        font-weight: lighter;
+        font-size: 1.8rem;
+        margin-top: 4rem;
+        grid-column: 2/4;
+    }
+
+    .service-items-box {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        margin-top: 1.8rem;
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-auto-rows: minmax(6rem, auto);
+
+        .service-item-link {
+
+            .service-item-img {
+    
+            }
+        }
+
+        .service-text-h2 {
+            @include font-link;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .service-text-p {
+            @include font-link;
+            font-weight: lighter;
+            font-size: .8rem;
+            padding: 1rem 0;
+        }
+    }
+
+    .service-items1 {
+        grid-column: 1/1;
+        width: 85%;
+    }
+
+    .service-items2 {
+        grid-column: 2/2;
+        width: 85%;
+    }
+
+    .service-items3 {
+        grid-column: 3/3;
+        width: 85%;
+    }
+
+    .service-items4 {
+        grid-column: 4/4;
+        width: 87%;
+    }
+
+    .cervice-hr {
+        width: 3rem;
+        grid-row: 2/3;
+        height: 0;
+        grid-column: 2/4;
     }
 }

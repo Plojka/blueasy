@@ -11,7 +11,7 @@ html, body {
   height: 100%; }
 
 .header {
-  height: 50rem; }
+  height: 35rem; }
   .header .header-img {
     height: 100%;
     background: url(../scss/hero.jpg) no-repeat;
@@ -115,5 +115,62 @@ html, body {
       background-color: rgba(66, 77, 84, 0.8);
       width: fit-content;
       justify-self: center; }
+
+.services {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-auto-rows: minmax(6rem, auto);
+  background-color: #4bcaff; }
+  .services .service-text-h1 {
+    font-family: segoe;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #f1f1f1;
+    font-weight: lighter;
+    font-size: 1.8rem;
+    margin-top: 4rem;
+    grid-column: 2/4; }
+  .services .service-items-box {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-top: 1.8rem;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-auto-rows: minmax(6rem, auto); }
+    .services .service-items-box .service-text-h2 {
+      font-family: segoe;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #f1f1f1;
+      font-weight: bold;
+      font-size: 1.5rem; }
+    .services .service-items-box .service-text-p {
+      font-family: segoe;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #f1f1f1;
+      font-weight: lighter;
+      font-size: .8rem;
+      padding: 1rem 0; }
+  .services .service-items1 {
+    grid-column: 1/1;
+    width: 85%; }
+  .services .service-items2 {
+    grid-column: 2/2;
+    width: 85%; }
+  .services .service-items3 {
+    grid-column: 3/3;
+    width: 85%; }
+  .services .service-items4 {
+    grid-column: 4/4;
+    width: 87%; }
+  .services .cervice-hr {
+    width: 3rem;
+    grid-row: 2/3;
+    height: 0;
+    grid-column: 2/4; }
 
 /*# sourceMappingURL=style.css.map */
