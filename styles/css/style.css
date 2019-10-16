@@ -12,6 +12,9 @@ html, body {
 
 .header {
   height: 35rem; }
+  @media only screen and (max-width: 800px) {
+    .header {
+      height: 9.6rem; } }
   .header .header-img {
     height: 100%;
     background: url(../scss/hero.jpg) no-repeat;
@@ -24,7 +27,8 @@ html, body {
     background-color: rgba(66, 77, 84, 0.8); }
     @media only screen and (max-width: 800px) {
       .header .header-nav-bar {
-        height: 1.8rem; } }
+        height: 1.8rem;
+        grid-template-columns: 25% 75%; } }
     .header .header-nav-bar .header-logo {
       text-align: center;
       margin-top: 1.8rem; }
@@ -40,7 +44,7 @@ html, body {
         color: #f1f1f1; }
         @media only screen and (max-width: 800px) {
           .header .header-nav-bar .header-logo .header-logo-link {
-            font-size: .5rem; } }
+            font-size: .8rem; } }
     .header .header-nav-bar .header-list-box {
       position: relative; }
       .header .header-nav-bar .header-list-box .header-list {
@@ -48,7 +52,7 @@ html, body {
         @media only screen and (max-width: 800px) {
           .header .header-nav-bar .header-list-box .header-list {
             display: none;
-            margin-top: .5rem; } }
+            margin-top: .4rem; } }
         .header .header-nav-bar .header-list-box .header-list .header-item-link {
           float: left;
           font-family: segoe;
@@ -60,7 +64,7 @@ html, body {
           margin-left: .9rem; }
           @media only screen and (max-width: 800px) {
             .header .header-nav-bar .header-list-box .header-list .header-item-link {
-              font-size: .3rem;
+              font-size: .6rem;
               margin: 0 .1rem 0 0;
               font-weight: normal; } }
           .header .header-nav-bar .header-list-box .header-list .header-item-link .header-item {
@@ -84,10 +88,10 @@ html, body {
             display: initial;
             cursor: pointer; } }
         .header .header-nav-bar .header-list-box .header-icon-button .header-icon-img {
-          height: .6rem;
-          width: .6rem;
+          height: 1rem;
+          width: 1rem;
           position: absolute;
-          top: .5rem;
+          top: .4rem;
           right: 1.5rem; }
   .header .header-text {
     font-family: segoe;
@@ -121,6 +125,9 @@ html, body {
   grid-template-columns: 10% 80% 10%;
   grid-auto-rows: minmax(6rem, auto);
   background-color: #4bcaff; }
+  @media only screen and (max-width: 800px) {
+    .services {
+      grid-auto-rows: initial; } }
   .services .service-text-h1 {
     font-family: segoe;
     font-weight: bold;
@@ -131,6 +138,10 @@ html, body {
     font-size: 1.8rem;
     margin-top: 4rem;
     grid-column: 2/4; }
+    @media only screen and (max-width: 800px) {
+      .services .service-text-h1 {
+        font-size: .8rem;
+        margin-top: 2rem; } }
   .services .service-items-box {
     grid-column: 2/3;
     grid-row: 2/3;
@@ -138,6 +149,14 @@ html, body {
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-auto-rows: minmax(6rem, auto); }
+    @media only screen and (max-width: 800px) {
+      .services .service-items-box {
+        grid-row: initial;
+        margin-top: 2rem; } }
+    @media only screen and (max-width: 800px) {
+      .services .service-items-box .service-item-link .service-item-img {
+        width: 1rem;
+        height: 1rem; } }
     .services .service-items-box .service-text-h2 {
       font-family: segoe;
       font-weight: bold;
@@ -146,6 +165,9 @@ html, body {
       color: #f1f1f1;
       font-weight: bold;
       font-size: 1.5rem; }
+      @media only screen and (max-width: 800px) {
+        .services .service-items-box .service-text-h2 {
+          font-size: .6rem; } }
     .services .service-items-box .service-text-p {
       font-family: segoe;
       font-weight: bold;
@@ -155,6 +177,10 @@ html, body {
       font-weight: lighter;
       font-size: .8rem;
       padding: 1rem 0; }
+      @media only screen and (max-width: 800px) {
+        .services .service-items-box .service-text-p {
+          font-size: .2rem;
+          padding: .4rem 0; } }
   .services .service-items1 {
     grid-column: 1/1;
     width: 85%; }
@@ -172,5 +198,8 @@ html, body {
     grid-row: 2/3;
     height: 0;
     grid-column: 2/4; }
+    @media only screen and (max-width: 800px) {
+      .services .cervice-hr {
+        width: 1.4rem; } }
 
 /*# sourceMappingURL=style.css.map */

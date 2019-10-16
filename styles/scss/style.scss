@@ -26,6 +26,10 @@ html, body {
 .header {
     height: 35rem;//50rem
 
+    @media only screen and(max-width: 800px) {
+        height: 9.6rem;
+    }
+
     .header-img {
         height: 100%;
         background: url(../scss/hero.jpg) no-repeat;
@@ -41,6 +45,7 @@ html, body {
 
         @media only screen and(max-width: 800px) {
             height: 1.8rem;
+            grid-template-columns: 25% 75%;
         }
 
         .header-logo {
@@ -56,7 +61,7 @@ html, body {
                 @include font-link;
 
                 @media only screen and(max-width: 800px) {
-                    font-size: .5rem;
+                    font-size: .8rem;
                 }
             }
         }
@@ -69,7 +74,7 @@ html, body {
 
                 @media only screen and(max-width: 800px) {
                     display: none;
-                    margin-top: .5rem;
+                    margin-top: .4rem;
                 }
 
                 .header-item-link {
@@ -79,7 +84,7 @@ html, body {
                     margin-left: .9rem;
 
                     @media only screen and(max-width: 800px) {
-                        font-size: .3rem;
+                        font-size: .6rem;
                         margin:0 .1rem 0 0;//canceld
                         font-weight: normal;
                     }
@@ -116,10 +121,10 @@ html, body {
                 }
 
                 .header-icon-img {
-                    height: .6rem;
-                    width: .6rem;
+                    height: 1rem;
+                    width: 1rem;
                     position: absolute;
-                    top: .5rem;
+                    top: .4rem;
                     right: 1.5rem;//canceld
                 }
             }
@@ -163,12 +168,21 @@ html, body {
     grid-auto-rows: minmax(6rem, auto);
     background-color: #4bcaff;
 
+    @media only screen and(max-width: 800px) {
+        grid-auto-rows: initial;
+    }
+
     .service-text-h1 {
         @include font-link;
         font-weight: lighter;
         font-size: 1.8rem;
         margin-top: 4rem;
         grid-column: 2/4;
+
+        @media only screen and(max-width: 800px) {
+            font-size: .8rem;
+            margin-top: 2rem;
+        }
     }
 
     .service-items-box {
@@ -179,10 +193,18 @@ html, body {
         grid-template-columns: repeat(4, auto);
         grid-auto-rows: minmax(6rem, auto);
 
+        @media only screen and(max-width: 800px) {
+            grid-row: initial;
+            margin-top: 2rem;
+        }
+
         .service-item-link {
 
             .service-item-img {
-    
+                @media only screen and(max-width: 800px) {
+                    width: 1rem;
+                    height: 1rem;
+                }
             }
         }
 
@@ -190,6 +212,10 @@ html, body {
             @include font-link;
             font-weight: bold;
             font-size: 1.5rem;
+
+            @media only screen and(max-width: 800px) {
+                font-size: .6rem;
+            }
         }
 
         .service-text-p {
@@ -197,6 +223,11 @@ html, body {
             font-weight: lighter;
             font-size: .8rem;
             padding: 1rem 0;
+
+            @media only screen and(max-width: 800px) {
+                font-size: .2rem;
+                padding: .4rem 0;
+            }
         }
     }
 
@@ -225,5 +256,9 @@ html, body {
         grid-row: 2/3;
         height: 0;
         grid-column: 2/4;
+
+        @media only screen and(max-width: 800px) {
+            width: 1.4rem;
+        }
     }
 }
