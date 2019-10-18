@@ -354,8 +354,7 @@ html, body {
                     .portfolio-item:hover {
                         list-style-type: none;
                         color: #4bcaff;
-                        border-color: #4bcaff;
-                        border: .1rem solid;
+                        border: .1rem solid #4bcaff;
                         transition: .7s;
                     }
                 }
@@ -390,6 +389,102 @@ html, body {
         .portfolio-img-item {
             max-width: 100%;
             height: auto;
+        }
+    }
+}
+
+//default
+.default {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    height: auto;
+    width: 100%;
+    background-color: #515f67;
+    margin-top: 5rem;
+
+    .default-box {
+        grid-column: 2/3;
+        display: grid;
+        grid-template-columns: 47% 2% 51%;
+        margin: 5rem 0;
+
+        @media only screen and(max-width: 800px) {
+            display: initial;
+        }
+
+        .default-text-box {
+            grid-column: 1/2;
+
+            .default-text-h1 {
+                @include font-link;
+                font-size: 1.8rem;
+
+                @media only screen and(max-width: 800px) {
+                    font-size: .8rem;
+                }
+            }
+
+            .defoult-hr {
+                width: 3rem;
+    
+                @media only screen and(max-width: 800px) {
+                    width: 1.4rem;
+                }
+            }
+
+            .default-text-p {
+                @include font-link;
+                font-weight: lighter;
+                font-size: .8rem;
+                padding: 1.8rem 0;
+                line-height: 1.5rem;
+
+                @media only screen and(max-width: 800px) {
+                    font-size: .5rem;
+                    padding: .8rem 0;
+                }
+            }
+
+            .default-bottom {
+                @include font-link;
+                border: 1px solid #353f46; 
+                padding: .5rem 1.5rem;
+                color: #353f46;
+                font-size: .8rem;
+
+                @media only screen and(max-width: 800px) {
+                    font-size: .5rem;
+                    padding: .5rem 1.5rem;
+                }
+            }
+
+            .default-bottom:not(:hover) {
+                transition: 2s;
+            }
+
+            .default-bottom:hover {
+                color: #4bcaff;
+                border-color: #4bcaff;
+                transition: .7s;
+            }
+        }
+
+        .default-video-box {
+            grid-column: 3/4;
+            width: 100%;
+            height: auto;
+
+            @media only screen and(max-width: 800px) {
+                margin-top: 1rem;
+            }
+        
+            .default-video-item {
+
+            }
+
+            .default-video-item[poster] {
+                object-fit: cover;
+            }
         }
     }
 }

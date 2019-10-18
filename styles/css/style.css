@@ -272,8 +272,7 @@ html, body {
         .portfolio .portfolio-nav-bar .portfolio-list-box .portfolio-list .portfolio-item-link .portfolio-item:hover {
           list-style-type: none;
           color: #4bcaff;
-          border-color: #4bcaff;
-          border: .1rem solid;
+          border: .1rem solid #4bcaff;
           transition: .7s; }
   .portfolio .portfolio-img-box {
     grid-column: 2/3;
@@ -296,5 +295,81 @@ html, body {
     .portfolio .portfolio-img-box .portfolio-img-item {
       max-width: 100%;
       height: auto; }
+
+.default {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  height: auto;
+  width: 100%;
+  background-color: #515f67;
+  margin-top: 5rem; }
+  .default .default-box {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 47% 2% 51%;
+    margin: 5rem 0; }
+    @media only screen and (max-width: 800px) {
+      .default .default-box {
+        display: initial; } }
+    .default .default-box .default-text-box {
+      grid-column: 1/2; }
+      .default .default-box .default-text-box .default-text-h1 {
+        font-family: segoe;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #f1f1f1;
+        font-size: 1.8rem; }
+        @media only screen and (max-width: 800px) {
+          .default .default-box .default-text-box .default-text-h1 {
+            font-size: .8rem; } }
+      .default .default-box .default-text-box .defoult-hr {
+        width: 3rem; }
+        @media only screen and (max-width: 800px) {
+          .default .default-box .default-text-box .defoult-hr {
+            width: 1.4rem; } }
+      .default .default-box .default-text-box .default-text-p {
+        font-family: segoe;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #f1f1f1;
+        font-weight: lighter;
+        font-size: .8rem;
+        padding: 1.8rem 0;
+        line-height: 1.5rem; }
+        @media only screen and (max-width: 800px) {
+          .default .default-box .default-text-box .default-text-p {
+            font-size: .5rem;
+            padding: .8rem 0; } }
+      .default .default-box .default-text-box .default-bottom {
+        font-family: segoe;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #f1f1f1;
+        border: 1px solid #353f46;
+        padding: .5rem 1.5rem;
+        color: #353f46;
+        font-size: .8rem; }
+        @media only screen and (max-width: 800px) {
+          .default .default-box .default-text-box .default-bottom {
+            font-size: .5rem;
+            padding: .5rem 1.5rem; } }
+      .default .default-box .default-text-box .default-bottom:not(:hover) {
+        transition: 2s; }
+      .default .default-box .default-text-box .default-bottom:hover {
+        color: #4bcaff;
+        border-color: #4bcaff;
+        transition: .7s; }
+    .default .default-box .default-video-box {
+      grid-column: 3/4;
+      width: 100%;
+      height: auto; }
+      @media only screen and (max-width: 800px) {
+        .default .default-box .default-video-box {
+          margin-top: 1rem; } }
+      .default .default-box .default-video-box .default-video-item[poster] {
+        object-fit: cover; }
 
 /*# sourceMappingURL=style.css.map */
