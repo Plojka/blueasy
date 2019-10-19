@@ -8,41 +8,40 @@
     <title>BLUEASY</title>
 </head>
 <body>
-    <div class="header">
-        <div class="header-img">
-            <div class="header-nav-bar">
-                <div class="header-logo">
-                    <a href="#" class="header-logo-link">blu<span style="color: #4bcaff;">e</span>asy</a>
-                </div>
-                <div class="header-list-box">
-                    <ul class="header-list" id="myLinks">
-                        <a href="#home" class="header-item-link">
-                            <li class="header-item">home</li>
-                        </a>    
-                        <a href="#services" class="header-item-link">
-                            <li class="header-item">services</li>
-                        </a>
-                        <a href="#features" class="header-item-link">
-                            <li class="header-item">features</li>
-                        </a>
-                        <a href="#portfolio" class="header-item-link">
-                            <li class="header-item">portfolio</li>
-                        </a>
-                        <a href="#contact" class="header-item-link">
-                            <li class="header-item">contact</li>
-                        </a>
-                    </ul>
-                    <a href="#" class="header-icon-button" onclick="myFunction()">
-                        <img src="image/header/app.png" alt="" class="header-icon-img">
-                    </a>
-                </div>
-            </div>
-            <div class="header-text">
-                <p class="header-text-top">"I’m looking for the unexpected</p>
-                <p class="header-text-bottom">I’m looking for things I’ve never seen before.”</p>
-            </div>
+
+<div class="header">
+    <div class="header-nav-bar">
+        <div class="header-logo">
+            <a href="#" class="header-logo-link">blu<span style="color: #4bcaff;">e</span>asy</a>
+        </div>
+        <div class="header-list-box">
+            <ul class="header-list" id="myLinks">
+                <a href="#home" class="header-item-link">
+                    <li class="header-item">home</li>
+                </a>    
+                <a href="#services" class="header-item-link">
+                    <li class="header-item">services</li>
+                </a>
+                <a href="#features" class="header-item-link">
+                    <li class="header-item">features</li>
+                </a>
+                <a href="#portfolio" class="header-item-link">
+                    <li class="header-item">portfolio</li>
+                </a>
+                <a href="#contact" class="header-item-link">
+                    <li class="header-item">contact</li>
+                </a>
+            </ul>
+            <a href="#" class="header-icon-button" onclick="myFunction()">
+                <img src="image/header/app.png" alt="" class="header-icon-img">
+            </a>
         </div>
     </div>
+    <div class="header-text">
+        <p class="header-text-top">"I’m looking for the unexpected</p>
+        <p class="header-text-bottom">I’m looking for things I’ve never seen before.”</p>
+    </div>
+</div>
 
     <div class="services" id="services">
         <p class="service-text-h1">services</p>
@@ -127,28 +126,32 @@
         </div>
         <div class="portfolio-img-box">
             <div class="portfolio-img-top">
-                <img src="image/portfolio/two.png" alt="two" class="portfolio-img-item" width="270px" height="270px">
+                <img src="image/portfolio/two.png" alt="two" class="portfolio-img-item" onclick="FunctionImg(this);" width="270px" height="270px">
             </div>
             <div class="portfolio-img-top">
-                <img src="image/portfolio/three.png" alt="three" class="portfolio-img-item" width="270px" height="270px">
+                <img src="image/portfolio/three.png" alt="three" class="portfolio-img-item" onclick="FunctionImg(this);" width="270px" height="270px">
             </div>
             <div class="portfolio-img-top">
-                <img src="image/portfolio/foure.png" alt="foure" class="portfolio-img-item" width="270px" height="270px">
+                <img src="image/portfolio/foure.png" alt="foure" class="portfolio-img-item" onclick="FunctionImg(this);" width="270px" height="270px">
             </div>
             <div class="portfolio-img-top">
-                <img src="image/portfolio/five.png" alt="five" class="portfolio-img-item" width="270px" height="270px">
+                <img src="image/portfolio/five.png" alt="five" class="portfolio-img-item" onclick="FunctionImg(this);" width="270px" height="270px">
             </div>
             <div class="portfolio-img-bottom">
-                <img src="image/portfolio/six.png" alt="six" class="portfolio-img-item" width="270px" height="270px">
+                <img src="image/portfolio/six.png" alt="six" class="portfolio-img-item" onclick="FunctionImg(this);" width="270px" height="270px">
             </div>
             <div class="portfolio-img-bottom">
-                <img src="image/portfolio/seven.png" alt="seven" class="portfolio-img-item" width="270px" height="270px">
+                <img src="image/portfolio/seven.png" alt="seven" class="portfolio-img-item" onclick="FunctionImg(this);" width="270px" height="270px">
             </div>
             <div class="portfolio-img-bottom">
-                <img src="image/portfolio/eite.png" alt="eite" class="portfolio-img-item" width="270px" height="270px">
+                <img src="image/portfolio/eite.png" alt="eite" class="portfolio-img-item" onclick="FunctionImg(this);" width="270px" height="270px">
             </div>
             <div class="portfolio-img-bottom">
-                <img src="image/portfolio/nine.png" alt="nine" class="portfolio-img-item" width="270px" height="270px">
+                <img src="image/portfolio/nine.png" alt="nine" class="portfolio-img-item" onclick="FunctionImg(this);" width="270px" height="270px">
+            </div>
+            <div class="portfolio-img-center">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <img id="expandedImg" class="portfolio-img-center-style">
             </div>
         </div>
     </div>
@@ -181,6 +184,19 @@
                 </video>
             </div>
         </div>
+    </div>
+
+    <div class="twitter">
+        <p class="twitter-text-h1">twitter</p>
+        <hr class="twitter-hr">
+        <p class="twitter-text-p">
+            Unerdwear cookie liquorice. Cake donut cupcake
+            lollipop soufflé candy. Chocolate oat cake<br><br>
+            <span><a href="#" class="twitter-text-p-email">@cheesecake</a></span> tootsie roll.
+        </p>
+        <a href="#" class="twitter-img-link">
+            <img class="twitter-img" src="image/twitter/twitter.png" alt="twitter">
+        </a>
     </div>
 
 <script src="script/main.js"></script>

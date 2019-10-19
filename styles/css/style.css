@@ -11,14 +11,17 @@ html, body {
   height: 100%; }
 
 .header {
-  height: 35rem; }
+  height: 35rem;
+  width: 100%;
+  background: url(../scss/header.jpg) no-repeat;
+  background-size: cover;
+  background-position: center; }
   @media only screen and (max-width: 800px) {
     .header {
-      height: 9.4rem; } }
-  .header .header-img {
-    height: 100%;
-    background: url(../scss/hero.jpg) no-repeat;
-    background-size: 100%; }
+      height: 9.4rem;
+      background: url(../scss/smartphone.jpg) no-repeat;
+      background-size: cover;
+      background-position: center; } }
   .header .header-nav-bar {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -108,7 +111,8 @@ html, body {
     grid-row-gap: 10%; }
     @media only screen and (max-width: 800px) {
       .header .header-text {
-        font-size: .5rem; } }
+        font-size: .5rem;
+        margin-top: 9%; } }
     .header .header-text .header-text-top {
       grid-column: 2/3;
       background-color: rgba(66, 77, 84, 0.8);
@@ -280,7 +284,8 @@ html, body {
     grid-template-columns: repeat(4, auto);
     grid-auto-rows: minmax(100px, auto);
     grid-gap: .5rem;
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    position: relative; }
     @media only screen and (max-width: 800px) {
       .portfolio .portfolio-img-box {
         grid-auto-rows: initial; } }
@@ -295,6 +300,29 @@ html, body {
     .portfolio .portfolio-img-box .portfolio-img-item {
       max-width: 100%;
       height: auto; }
+    .portfolio .portfolio-img-box .portfolio-img-item:hover {
+      background-color: rgba(66, 75, 82, 0.9);
+      color: black; }
+    .portfolio .portfolio-img-box .portfolio-img-center {
+      display: none;
+      position: absolute;
+      left: 16.8rem; }
+      @media only screen and (max-width: 800px) {
+        .portfolio .portfolio-img-box .portfolio-img-center {
+          left: 10rem; } }
+      .portfolio .portfolio-img-box .portfolio-img-center .portfolio-img-center-style {
+        zoom: 2;
+        background-color: #fff; }
+        @media only screen and (max-width: 800px) {
+          .portfolio .portfolio-img-box .portfolio-img-center .portfolio-img-center-style {
+            zoom: .5; } }
+      .portfolio .portfolio-img-box .portfolio-img-center .closebtn {
+        color: #f1f1f1;
+        font-size: 2rem;
+        cursor: pointer;
+        font-weight: bolder;
+        padding: 0px .3rem;
+        position: absolute; }
 
 .default {
   display: grid;
@@ -319,6 +347,7 @@ html, body {
         text-transform: uppercase;
         text-decoration: none;
         color: #f1f1f1;
+        font-weight: lighter;
         font-size: 1.8rem; }
         @media only screen and (max-width: 800px) {
           .default .default-box .default-text-box .default-text-h1 {
@@ -371,5 +400,55 @@ html, body {
           margin-top: 1rem; } }
       .default .default-box .default-video-box .default-video-item[poster] {
         object-fit: cover; }
+
+.twitter {
+  width: 100%;
+  height: auto;
+  background-color: #4bcaff;
+  display: grid;
+  grid-template-columns: 10% 50% 40%; }
+  .twitter .twitter-text-h1 {
+    font-family: segoe;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #f1f1f1;
+    font-weight: lighter;
+    font-size: 1.8rem;
+    margin-top: 4rem;
+    grid-column: 2/4; }
+    @media only screen and (max-width: 800px) {
+      .twitter .twitter-text-h1 {
+        font-size: .8rem; } }
+  .twitter .twitter-hr {
+    width: 3rem;
+    grid-row: 2/3;
+    height: 0;
+    grid-column: 2/2; }
+    @media only screen and (max-width: 800px) {
+      .twitter .twitter-hr {
+        width: 1.4rem; } }
+  .twitter .twitter-text-p {
+    font-family: segoe;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #f1f1f1;
+    font-weight: lighter;
+    font-size: .8rem;
+    grid-column: 2/4;
+    margin: 2rem 0 4rem 0; }
+    @media only screen and (max-width: 800px) {
+      .twitter .twitter-text-p {
+        font-size: .5rem; } }
+  .twitter .twitter-img-link {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center; }
+  .twitter .twitter-text-p-email {
+    text-decoration: none;
+    color: #f1f1f1; }
+  .twitter .twitter-text-p-email:hover {
+    color: #0000ff; }
 
 /*# sourceMappingURL=style.css.map */

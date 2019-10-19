@@ -24,18 +24,19 @@ html, body {
 
 //header
 .header {
-    height: 35rem;//50rem
+    height: 35rem;
+    width: 100%;
+    background: url(../scss/header.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
 
     @media only screen and(max-width: 800px) {
         height: 9.4rem;
+        background: url(../scss/smartphone.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
     }
-
-    .header-img {
-        height: 100%;
-        background: url(../scss/hero.jpg) no-repeat;
-        background-size: 100%;
-    }
-
+   
     .header-nav-bar {
         display: grid;
         grid-template-columns: 50% 50%;
@@ -85,7 +86,7 @@ html, body {
 
                     @media only screen and(max-width: 800px) {
                         font-size: .6rem;
-                        margin:0 .1rem 0 0;//canceld
+                        margin:0 .1rem 0 0;
                         font-weight: normal;
                     }
 
@@ -125,7 +126,7 @@ html, body {
                     width: 1rem;
                     position: absolute;
                     top: .4rem;
-                    right: 1.5rem;//canceld
+                    right: 1.5rem;
                 }
             }
         }
@@ -143,6 +144,7 @@ html, body {
 
         @media only screen and(max-width: 800px) {
             font-size: .5rem;
+            margin-top:  9%;
         }
 
         .header-text-top {
@@ -334,7 +336,7 @@ html, body {
 
                     @media only screen and(max-width: 800px) {
                         font-size: .5rem;
-                        margin:0 .1rem 0 0;//canceld
+                        margin:0 .1rem 0 0;
                         font-weight: normal;
                     }
 
@@ -369,6 +371,7 @@ html, body {
         grid-auto-rows: minmax(100px, auto);
         grid-gap: .5rem;
         margin-top: 1rem;
+        position: relative;
 
         @media only screen and(max-width: 800px) {
             grid-auto-rows: initial;
@@ -389,6 +392,39 @@ html, body {
         .portfolio-img-item {
             max-width: 100%;
             height: auto;
+        }
+
+        .portfolio-img-item:hover {
+            background-color: rgba(66, 75, 82, .9);
+            color: rgb(0, 0, 0);
+        }
+
+        .portfolio-img-center {
+            display: none;
+            position: absolute;
+            left: 16.8rem;
+
+            @media only screen and(max-width: 800px) {
+                left: 10rem;
+            }
+
+            .portfolio-img-center-style {
+                zoom: 2;
+                background-color: #fff;
+
+                @media only screen and(max-width: 800px) {
+                    zoom: .5;
+                }
+            }
+
+            .closebtn {
+                color: #f1f1f1;
+                font-size: 2rem;
+                cursor: pointer;
+                font-weight: bolder;
+                padding: 0px .3rem;
+                position: absolute;
+            }
         }
     }
 }
@@ -417,6 +453,7 @@ html, body {
 
             .default-text-h1 {
                 @include font-link;
+                font-weight: lighter;
                 font-size: 1.8rem;
 
                 @media only screen and(max-width: 800px) {
@@ -477,14 +514,69 @@ html, body {
             @media only screen and(max-width: 800px) {
                 margin-top: 1rem;
             }
-        
-            .default-video-item {
-
-            }
 
             .default-video-item[poster] {
                 object-fit: cover;
             }
         }
+    }
+}
+
+//twitter
+.twitter {
+    width: 100%;
+    height: auto;
+    background-color: #4bcaff;
+    display: grid;
+    grid-template-columns: 10% 50% 40%;
+
+    .twitter-text-h1 {
+        @include font-link;
+        font-weight: lighter;
+        font-size: 1.8rem;
+        margin-top: 4rem;
+        grid-column: 2/4;
+
+        @media only screen and(max-width: 800px) {
+            font-size: .8rem;
+        }
+    }
+
+    .twitter-hr {
+        width: 3rem;
+        grid-row: 2/3;
+        height: 0;
+        grid-column: 2/2;
+
+        @media only screen and(max-width: 800px) {
+            width: 1.4rem;
+        }
+    }
+
+    .twitter-text-p {
+        @include font-link;
+        font-weight: lighter;
+        font-size: .8rem;
+        grid-column: 2/4;
+        margin: 2rem 0 4rem 0;
+
+        @media only screen and(max-width: 800px) {
+            font-size: .5rem;
+        }
+    }
+
+    .twitter-img-link {
+        grid-column: 3/4;
+        grid-row: 2/3;
+        text-align: center;
+    }
+
+    .twitter-text-p-email {
+        text-decoration: none;
+        color: #f1f1f1;
+    }
+
+    .twitter-text-p-email:hover {
+        color: #0000ff;
     }
 }
