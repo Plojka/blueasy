@@ -630,3 +630,59 @@ html, body {
         }
     }
 }
+
+//testimonials
+.testimonials {
+    width: 100%;
+    height: auto;
+    // background-color: #4bcaff;
+    display: grid;
+    grid-template-columns: 10% 50% 40%;
+
+    .testimonials-text-h1 {
+        @include font-link;
+        font-weight: lighter;
+        font-size: 1.8rem;
+        margin-top: 4rem;
+        grid-column: 2/4;
+        color: #515f67;
+
+        @media only screen and(max-width: 800px) {
+            font-size: 1.5rem;
+        }
+    }
+
+    .testimonials-text-p {
+        @include font-link;
+        font-weight: lighter;
+        font-size: .8rem;
+        grid-column: 2/4;
+        margin: 2rem 0;
+        color: #515f67;
+
+        @media only screen and(max-width: 800px) {
+            font-size: .6rem;
+            padding-right: 3rem;
+        }
+    }
+
+    .testimonials-text-walter {
+        @include font-link;
+        text-transform: none;
+        grid-column: 2/4;
+        color: #4bcaff;
+        margin-bottom: 4rem;
+        width: 30%;
+        font-weight: lighter;
+    }
+
+    .testimonials-text-walter:hover {
+        color: #515f67;
+    }
+
+    .testimonials-img-link {
+        grid-column: 3/4;
+        grid-row: 2/3;
+        text-align: center;
+    }
+}

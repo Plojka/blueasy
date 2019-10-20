@@ -491,4 +491,57 @@ html, body {
       .whoIs .whoIs-box .whoIs-right .whoIs-none {
         visibility: visible; }
 
+.testimonials {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 10% 50% 40%; }
+  .testimonials .testimonials-text-h1 {
+    font-family: segoe;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #f1f1f1;
+    font-weight: lighter;
+    font-size: 1.8rem;
+    margin-top: 4rem;
+    grid-column: 2/4;
+    color: #515f67; }
+    @media only screen and (max-width: 800px) {
+      .testimonials .testimonials-text-h1 {
+        font-size: 1.5rem; } }
+  .testimonials .testimonials-text-p {
+    font-family: segoe;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #f1f1f1;
+    font-weight: lighter;
+    font-size: .8rem;
+    grid-column: 2/4;
+    margin: 2rem 0;
+    color: #515f67; }
+    @media only screen and (max-width: 800px) {
+      .testimonials .testimonials-text-p {
+        font-size: .6rem;
+        padding-right: 3rem; } }
+  .testimonials .testimonials-text-walter {
+    font-family: segoe;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #f1f1f1;
+    text-transform: none;
+    grid-column: 2/4;
+    color: #4bcaff;
+    margin-bottom: 4rem;
+    width: 30%;
+    font-weight: lighter; }
+  .testimonials .testimonials-text-walter:hover {
+    color: #515f67; }
+  .testimonials .testimonials-img-link {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center; }
+
 /*# sourceMappingURL=style.css.map */
