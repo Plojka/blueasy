@@ -197,14 +197,6 @@ html, body {
   .services .service-items4 {
     grid-column: 4/4;
     width: 87%; }
-  .services .cervice-hr {
-    width: 3rem;
-    grid-row: 2/3;
-    height: 0;
-    grid-column: 2/4; }
-    @media only screen and (max-width: 800px) {
-      .services .cervice-hr {
-        width: 1.4rem; } }
 
 .portfolio {
   height: auto;
@@ -238,14 +230,6 @@ html, body {
         .portfolio .portfolio-nav-bar .portfolio-text-box .portfolio-text-h1 {
           font-size: .8rem;
           margin-top: 2rem; } }
-    .portfolio .portfolio-nav-bar .portfolio-text-box .portfolio-hr {
-      width: 3.5rem;
-      grid-row: 2/3;
-      height: 0;
-      grid-column: 2/4; }
-      @media only screen and (max-width: 800px) {
-        .portfolio .portfolio-nav-bar .portfolio-text-box .portfolio-hr {
-          width: 1.4rem; } }
     .portfolio .portfolio-nav-bar .portfolio-list-box .portfolio-list {
       margin-top: 3rem; }
       @media only screen and (max-width: 800px) {
@@ -311,11 +295,7 @@ html, body {
         .portfolio .portfolio-img-box .portfolio-img-center {
           left: 10rem; } }
       .portfolio .portfolio-img-box .portfolio-img-center .portfolio-img-center-style {
-        zoom: 2;
         background-color: #fff; }
-        @media only screen and (max-width: 800px) {
-          .portfolio .portfolio-img-box .portfolio-img-center .portfolio-img-center-style {
-            zoom: .5; } }
       .portfolio .portfolio-img-box .portfolio-img-center .closebtn {
         color: #f1f1f1;
         font-size: 2rem;
@@ -352,11 +332,6 @@ html, body {
         @media only screen and (max-width: 800px) {
           .default .default-box .default-text-box .default-text-h1 {
             font-size: .8rem; } }
-      .default .default-box .default-text-box .defoult-hr {
-        width: 3rem; }
-        @media only screen and (max-width: 800px) {
-          .default .default-box .default-text-box .defoult-hr {
-            width: 1.4rem; } }
       .default .default-box .default-text-box .default-text-p {
         font-family: segoe;
         font-weight: bold;
@@ -420,14 +395,6 @@ html, body {
     @media only screen and (max-width: 800px) {
       .twitter .twitter-text-h1 {
         font-size: .8rem; } }
-  .twitter .twitter-hr {
-    width: 3rem;
-    grid-row: 2/3;
-    height: 0;
-    grid-column: 2/2; }
-    @media only screen and (max-width: 800px) {
-      .twitter .twitter-hr {
-        width: 1.4rem; } }
   .twitter .twitter-text-p {
     font-family: segoe;
     font-weight: bold;
@@ -450,5 +417,78 @@ html, body {
     color: #f1f1f1; }
   .twitter .twitter-text-p-email:hover {
     color: #0000ff; }
+
+.whoIs {
+  height: 31.5rem;
+  width: 100%;
+  background: url(../scss/who_is.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-columns: 10% 80% 10%; }
+  .whoIs .whoIs-box {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 49% 2% 49%; }
+    @media only screen and (max-width: 800px) {
+      .whoIs .whoIs-box {
+        display: initial; } }
+    .whoIs .whoIs-box .whoIs-left {
+      grid-column: 1/2; }
+      .whoIs .whoIs-box .whoIs-left .whoIs-text-h1 {
+        font-family: segoe;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #f1f1f1;
+        font-weight: lighter;
+        font-size: 1.8rem;
+        margin-top: 4rem; }
+        @media only screen and (max-width: 800px) {
+          .whoIs .whoIs-box .whoIs-left .whoIs-text-h1 {
+            font-size: 1.3rem;
+            text-align: center; } }
+      .whoIs .whoIs-box .whoIs-left .whoIs-text-p {
+        font-family: segoe;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #f1f1f1;
+        font-weight: lighter;
+        font-size: .8rem;
+        margin: 2rem 0 4rem 0;
+        text-transform: initial; }
+        @media only screen and (max-width: 800px) {
+          .whoIs .whoIs-box .whoIs-left .whoIs-text-p {
+            font-size: .6rem; } }
+    .whoIs .whoIs-box .whoIs-right {
+      grid-column: 3/4;
+      display: grid; }
+      .whoIs .whoIs-box .whoIs-right .whoIs-text-p {
+        font-family: segoe;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #f1f1f1;
+        font-weight: lighter;
+        font-size: .8rem;
+        text-transform: initial; }
+        @media only screen and (max-width: 800px) {
+          .whoIs .whoIs-box .whoIs-right .whoIs-text-p {
+            font-size: .6rem;
+            margin-bottom: 2rem; } }
+      @media only screen and (max-width: 800px) {
+        .whoIs .whoIs-box .whoIs-right .whoIs-socil-box {
+          text-align: end; } }
+      .whoIs .whoIs-box .whoIs-right .whoIs-socil-box .whoIs-socil-link {
+        text-decoration: none; }
+        .whoIs .whoIs-box .whoIs-right .whoIs-socil-box .whoIs-socil-link .whoIs-socil-img {
+          border: .1rem solid #f1f1f1;
+          padding: 1rem; }
+          @media only screen and (max-width: 800px) {
+            .whoIs .whoIs-box .whoIs-right .whoIs-socil-box .whoIs-socil-link .whoIs-socil-img {
+              padding: .2rem; } }
+      .whoIs .whoIs-box .whoIs-right .whoIs-none {
+        visibility: visible; }
 
 /*# sourceMappingURL=style.css.map */

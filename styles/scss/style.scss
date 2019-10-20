@@ -252,17 +252,6 @@ html, body {
         grid-column: 4/4;
         width: 87%;
     }
-
-    .cervice-hr {
-        width: 3rem;
-        grid-row: 2/3;
-        height: 0;
-        grid-column: 2/4;
-
-        @media only screen and(max-width: 800px) {
-            width: 1.4rem;
-        }
-    }
 }
 
 //portfolio
@@ -300,17 +289,6 @@ html, body {
                 @media only screen and(max-width: 800px) {
                     font-size: .8rem;
                     margin-top: 2rem;
-                }
-            }
-
-            .portfolio-hr {
-                width: 3.5rem;
-                grid-row: 2/3;
-                height: 0;
-                grid-column: 2/4;
-    
-                @media only screen and(max-width: 800px) {
-                    width: 1.4rem;
                 }
             }
         }
@@ -409,11 +387,13 @@ html, body {
             }
 
             .portfolio-img-center-style {
-                zoom: 2;
+                // transform: scale(2);
+                // zoom: 2;
                 background-color: #fff;
 
                 @media only screen and(max-width: 800px) {
-                    zoom: .5;
+                    // transform: scale(.5)
+                    // zoom: .5;
                 }
             }
 
@@ -458,14 +438,6 @@ html, body {
 
                 @media only screen and(max-width: 800px) {
                     font-size: .8rem;
-                }
-            }
-
-            .defoult-hr {
-                width: 3rem;
-    
-                @media only screen and(max-width: 800px) {
-                    width: 1.4rem;
                 }
             }
 
@@ -542,17 +514,6 @@ html, body {
         }
     }
 
-    .twitter-hr {
-        width: 3rem;
-        grid-row: 2/3;
-        height: 0;
-        grid-column: 2/2;
-
-        @media only screen and(max-width: 800px) {
-            width: 1.4rem;
-        }
-    }
-
     .twitter-text-p {
         @include font-link;
         font-weight: lighter;
@@ -578,5 +539,94 @@ html, body {
 
     .twitter-text-p-email:hover {
         color: #0000ff;
+    }
+}
+
+//whoIs
+.whoIs {
+   height: 31.5rem;
+   width: 100%;
+   background: url(../scss/who_is.jpg) no-repeat;
+   background-size: cover;
+   background-position: center;
+   display: grid;
+   grid-template-columns: 10% 80% 10%;
+
+    .whoIs-box {
+        grid-column: 2/3;
+        display: grid;
+        grid-template-columns: 49% 2% 49%;
+        
+        @media only screen and(max-width: 800px) {
+            display: initial;
+        }
+
+        .whoIs-left {
+            grid-column: 1/2;
+
+            .whoIs-text-h1 {
+                @include font-link;
+                font-weight: lighter;
+                font-size: 1.8rem;
+                margin-top: 4rem;
+
+                @media only screen and(max-width: 800px) {
+                    font-size: 1.3rem;
+                    text-align: center;
+                }
+            }
+
+            .whoIs-text-p {
+                @include font-link;
+                font-weight: lighter;
+                font-size: .8rem;
+                margin: 2rem 0 4rem 0;
+                text-transform: initial;
+
+                @media only screen and(max-width: 800px) {
+                    font-size: .6rem;
+                }
+            }
+        }
+
+        .whoIs-right {
+            grid-column: 3/4;
+            display: grid;
+
+            .whoIs-text-p {
+                @include font-link;
+                font-weight: lighter;
+                font-size: .8rem;
+                text-transform: initial;
+
+                @media only screen and(max-width: 800px) {
+                    font-size: .6rem;
+                    margin-bottom: 2rem;
+                }
+            }
+
+            .whoIs-socil-box {
+
+                @media only screen and(max-width: 800px) {
+                    text-align: end;
+                }
+                .whoIs-socil-link {
+                    text-decoration: none;
+
+                   .whoIs-socil-img{
+                        border: .1rem solid #f1f1f1;
+                        padding: 1rem;
+
+                        @media only screen and(max-width: 800px) {
+                            padding: .2rem;
+                        }
+                   } 
+                }
+            }
+
+            .whoIs-none {
+                visibility: visible;
+            }
+        }
     }
 }
