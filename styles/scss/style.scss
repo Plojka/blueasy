@@ -686,3 +686,61 @@ html, body {
         text-align: center;
     }
 }
+
+//contact
+.contact {
+    height: 36rem;
+    width: 100%;
+    background: url(../scss/contact.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+}
+
+//footer
+.footer {
+    height: auto;
+    width: 100%;
+    background-color: #353f47;
+    display: grid;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-auto-rows: minmax(3rem, auto);
+
+    @media only screen and(max-width: 800px) {
+        grid-template-columns: initial;
+    }
+
+    .footer-link-box {
+        grid-column: 2/3;
+        grid-row: 2/3;
+
+        .footer-link {
+            @include font-link;
+            font-size: .7rem;
+            color: #515f67;
+            padding: 0rem .7rem;
+
+            @media only screen and(max-width: 800px) {
+                padding: 0rem .5rem;
+            }
+        }
+    }
+
+    .footer-logo {
+        grid-column: 3/4;
+        grid-row: 2/3;
+        text-align: end;
+        @include font-link;
+        font-size: .7rem;
+        color: #515f67;
+
+        @media only screen and(max-width: 800px) {
+           text-align: start;
+        }
+    }
+
+    .footer-link:hover {
+        color: #4bcaff;
+    }
+}

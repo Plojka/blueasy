@@ -544,4 +544,55 @@ html, body {
     grid-row: 2/3;
     text-align: center; }
 
+.contact {
+  height: 36rem;
+  width: 100%;
+  background: url(../scss/contact.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-columns: 10% 80% 10%; }
+
+.footer {
+  height: auto;
+  width: 100%;
+  background-color: #353f47;
+  display: grid;
+  grid-template-columns: 10% 40% 40% 10%;
+  grid-auto-rows: minmax(3rem, auto); }
+  @media only screen and (max-width: 800px) {
+    .footer {
+      grid-template-columns: initial; } }
+  .footer .footer-link-box {
+    grid-column: 2/3;
+    grid-row: 2/3; }
+    .footer .footer-link-box .footer-link {
+      font-family: segoe;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #f1f1f1;
+      font-size: .7rem;
+      color: #515f67;
+      padding: 0rem .7rem; }
+      @media only screen and (max-width: 800px) {
+        .footer .footer-link-box .footer-link {
+          padding: 0rem .5rem; } }
+  .footer .footer-logo {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: end;
+    font-family: segoe;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #f1f1f1;
+    font-size: .7rem;
+    color: #515f67; }
+    @media only screen and (max-width: 800px) {
+      .footer .footer-logo {
+        text-align: start; } }
+  .footer .footer-link:hover {
+    color: #4bcaff; }
+
 /*# sourceMappingURL=style.css.map */
