@@ -670,13 +670,12 @@ html, body {
           outline: none;
           height: 3.7rem;
           width: 70%;
-          margin-bottom: 3rem;
+          margin: 1.5rem 0;
           cursor: pointer; }
           @media only screen and (max-width: 800px) {
             .contact .contact-box .contact-form-bottom-box .contact-form-bottom .contact-submit {
               font-size: .6rem;
-              height: 2rem;
-              margin: 1.5rem 0; } }
+              height: 2rem; } }
 
 .footer {
   height: auto;
