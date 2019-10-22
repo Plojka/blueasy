@@ -8,9 +8,17 @@ function myFunction() {
     }
   }
 
+  //portfolio
   function FunctionImg(imgs) {
     var expandImg = document.getElementById("expandedImg");
     expandImg.src = imgs.src;
     expandImg.parentElement.style.display = "block";
-    expandImg.parentElement.style.zoom=2.0;this.blur();
+    // expandImg.parentElement.style.zoom=200%;this.blur();
   }
+
+  //contact
+var form = document.querySelector("form");
+  form.addEventListener("submit", function(event) {
+    console.log("Saving value", form.elements.value.value);
+    event.preventDefault();
+  });

@@ -383,17 +383,17 @@ html, body {
             left: 16.8rem;
 
             @media only screen and(max-width: 800px) {
-                left: 10rem;
+                left: 2rem;
             }
 
             .portfolio-img-center-style {
-                // transform: scale(2);
-                // zoom: 2;
+                -moz-transform: scale(2);
+                zoom: 200%;
                 background-color: #fff;
 
                 @media only screen and(max-width: 800px) {
-                    // transform: scale(.5)
-                    // zoom: .5;
+                    -moz-transform: scale(.84);
+                    zoom: 84%;
                 }
             }
 
@@ -426,6 +426,7 @@ html, body {
 
         @media only screen and(max-width: 800px) {
             display: initial;
+            margin-bottom: 2rem;
         }
 
         .default-text-box {
@@ -484,11 +485,20 @@ html, body {
             height: auto;
 
             @media only screen and(max-width: 800px) {
-                margin-top: 1rem;
+                display: none;
             }
 
             .default-video-item[poster] {
                 object-fit: cover;
+            }
+        }
+
+        .default-video-item-media {
+            display: none;
+
+            @media only screen and(max-width: 800px) {
+                margin-top: 1rem;
+                display: initial;
             }
         }
     }
